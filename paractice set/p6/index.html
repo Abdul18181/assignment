@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            width: 100%;
+            background-color: black;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+        }
+        ul li{
+            list-style: none;
+
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+
+
+
+        #outer{
+            margin-top: 100px;
+            margin-left: 100px;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        #inner{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+        }
+
+
+        /* <!-- Qs:	Which has higher priority - align-items or align-self? --> */
+
+#container{
+
+    height: 500px;
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    height: 200px;
+    width: 20%;
+    background-color: black;
+    color: white;
+
+}
+.card:nth-child(1){
+    /*align-items priority on container based */
+    /*Align-self has higher priority*/
+    align-self: flex-start;
+}
+    </style>
+</head>
+<body>
+    <!-- Qs:	Create a navbar with 4 options in the form of anchor tags inside list items. -->
+    <!-- Now, use flexbox to place them all spaced equally in a single line. -->
+
+    <nav id="nav">
+        <ul>
+            <li><a href="#">option-1</a></li>
+            <li><a href="#">option-2</a></li>
+            <li><a href="#">option-3</a></li>
+            <li><a href="#">option-4</a></li>
+        </ul>
+    </nav>
+    <!-- Qs:	Use flexbox to center one div inside another div. -->
+    <div id="outer">
+        <div id="inner">
+
+        </div>
+    </div>
+
+    <!-- Qs:	Which has higher priority - align-items or align-self? -->
+
+    <div id="container">
+<div class="card"></div>
+<div class="card">Align self</div>
+<div class="card"></div>
+    </div>
+</body>
+</html>

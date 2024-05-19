@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+           /* display: inline;  */
+           /* margin: 40px; */
+        }
+       #header nav{
+            height: 60px;
+            width: 100%;
+            background-color: black;
+padding: 10px;
+/* text-align: ; */
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+        }
+nav .logo h2{
+    color: orange;
+    /* margin-bottom: 10px; */
+}
+nav .logo{
+    /* color: orange; */
+    /* margin-left:50px; */
+    /* margin-bottom: 20px; */
+}
+#ul{
+width: 800px;
+}
+#ul div{
+    display: inline;
+    text-decoration: none;
+    margin-left: 200px;
+}
+#ul div a{
+    text-decoration: none;
+    color: white;
+}
+#login input{
+padding: 10px;
+
+}
+#login button{
+    padding: 11px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+#content div{
+    width: 100px;
+    height: 100px;
+}
+#content{
+    display: flex;
+}
+/* Q2:	Add borders to all the divs. */
+#content div{
+    border: 2px solid black;
+}
+/* Q3:	Add a different background color to each div with an opacity of 0.5*/
+#content div:nth-child(1){
+background-color: blueviolet;
+}
+#content div:nth-child(2){
+background-color: red;
+}
+#content div:nth-child(2){
+background-color:purple;
+}
+/*Q4:	Give the content area an appropriate height. */
+#content{
+ height: 400px;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;   
+}
+footer{
+    height: 190px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <!-- Q1:	Create a webpage layout with a header, a footer & a content area containing 3 divs. -->
+<!-- Set the height & width of divs to 100px. -->
+<!-- (add the previous navbar in the header) -->
+<div class="container">
+    <header id="header">
+    <nav>
+        <div class="logo">
+            <h2>amazon</h2>
+        </div>
+        <div id="ul">
+           <div><a href="#">Account</a></div> 
+            <div><a href="#">My Cart</a></div>
+            <div><a href="#">Contact Us</a></div>
+        </div>
+        <div id="login">
+            <input type="text" placeholder="search Amazon"><button>Search</button>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="content">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    </section>
+</main>
+<footer>
+    &copy; All right reserved
+</footer>
+</div>
+</body>
+</html>
